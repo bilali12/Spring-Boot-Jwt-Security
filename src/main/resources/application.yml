@@ -1,0 +1,19 @@
+jwt:
+  secret: '30f30528ca47b8f9e71754cd3ec8f9d4a13d1da6368e8224546ccb54d5915873'
+
+server:
+  port: 8085
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spring_security_db
+    username: bilal
+    password: passer123
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
